@@ -22,3 +22,7 @@ Dataset sourced from Kaggle IPL dataset
 conclusion:
 
 This project demonstrates basic data analysis and visualization techniques using real-world data.
+
+used kaggle dataset:
+https://www.kaggle.com/datasets/ramjidoolla/ipl-data-set?select=matches.csv
+https://www.kaggle.com/datasets/ramjidoolla/ipl-data-set?resource=download&select=deliveries.csv
