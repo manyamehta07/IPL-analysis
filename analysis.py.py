@@ -15,36 +15,41 @@ import pandas as pd
 
 
 # Load datasets
+#reading datasets
 matches = pd.read_csv("matches.csv")
 deliveries = pd.read_csv("deliveries.csv")
 
-# Preview
+# previewing entire dataset 
 print(matches.head())
 print(deliveries.head())
 print(matches.columns)
 print(deliveries.columns)
+#analyzing the teams with most runs
 wins = matches['winner'].value_counts()
 
 print(wins.head(10))
-
+#plotting a bar chart
 wins.head(10).plot(kind='bar')
 plt.title("Top 10 Winning Teams in IPL")
 plt.xlabel("Teams")
 plt.ylabel("Wins")
 plt.xticks(rotation=45)
 plt.show()
+#analyzing top run scorers
 runs = deliveries.groupby('batsman')['batsman_runs'].sum()
 
 top_batsmen = runs.sort_values(ascending=False).head(10)
 
 print(top_batsmen)
-
+#plotting the graph
 top_batsmen.plot(kind='bar')
 plt.title("Top 10 Batsmen in IPL")
 plt.xlabel("Player")
 plt.ylabel("Runs")
 plt.xticks(rotation=45)
 plt.show()
+
+#finding interdependancy of toss and match result
 toss_win = matches[matches['toss_winner'] == matches['winner']]
 
 percentage = (len(toss_win) / len(matches)) * 100
