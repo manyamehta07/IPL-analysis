@@ -1,22 +1,21 @@
 
 overview:
 
-This project analyzes IPL (2017) cricket data to extract meaningful insights about team performance, player statistics, and match trends.
+This project analyzes IPL cricket data to extract meaningful insights about team performance, player statistics, and match trends.
 
 key points:
 
-- Top performing teams based on total wins
+- analyzed the data and find most match winning teams : mumbai indians
 
-- Top batsmen based on total runs
+- Top batsmen based on total runs : Virat kohli
 
-- Impact of toss on match results
-
-- Matches played per season
+- Impact of toss on match results : analyzed that the toss win aleading to match win is 51.98%
 
 
 Dataset:
 
 Dataset sourced from Kaggle IPL dataset
+
 
 
 conclusion:
